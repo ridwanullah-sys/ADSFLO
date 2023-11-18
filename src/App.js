@@ -10,10 +10,12 @@ function App() {
 
   const fetcher = async () => {
     setError(null);
-    const response = await fetch("api/restaurants");
+    const response = await fetch(
+      // "https://nextjs-orpin-omega-98.vercel.app/api/restaurants"
+      "api/restaurants"
+    );
     if (response.ok) {
       const json = await response.json();
-
       return json;
     } else {
       setError("API Fetching Error");
@@ -22,7 +24,7 @@ function App() {
   };
 
   const Arrange = async () => {
-    setLoading(false);
+    setLoading(true);
     const fetchresults = await fetcher();
     if (fetchresults) {
       const Array = [];
