@@ -22,8 +22,7 @@ function App() {
   };
 
   const Arrange = async () => {
-    setLoading(true);
-
+    setLoading(false);
     const fetchresults = await fetcher();
     if (fetchresults) {
       const Array = [];
