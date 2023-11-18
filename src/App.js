@@ -11,8 +11,8 @@ function App() {
   const fetcher = async () => {
     setError(null);
     const response = await fetch(
-      "https://nextjs-orpin-omega-98.vercel.app/api/restaurants"
-      //"api/restaurants"
+      //"https://nextjs-orpin-omega-98.vercel.app/api/restaurants"
+      "api/restaurants"
     );
     if (response.ok) {
       const json = await response.json();

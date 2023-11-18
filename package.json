@@ -1,6 +1,5 @@
 {
   "name": "adsflo",
-  "proxy": "https://nextjs-orpin-omega-98.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
